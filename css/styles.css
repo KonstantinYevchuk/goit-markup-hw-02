@@ -6,7 +6,6 @@
   --text-col: #757575;
   --studio-head: #000000;
   --main-button-ac: #188ce8;
-  --features-back: #f5f5f5;
   --team-back: #f5f4fa;
   --foot-back: #2f303a;
   --portfolio-back: #f5f5f5;
@@ -38,31 +37,28 @@ li {
 }
 .logo-studio {
   color: var(--studio-head);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
 }
 /* Navigation */
-.navigation,
-.contacts {
+.link.current {
+  color: var(--accent-col);
+}
+.menu-link a {
+  color: var(--main-col);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.navigation .link.current {
-  color: var(--accent-col);
-}
-.navigation a {
-  color: var(--main-col);
-}
-.navigation a:hover,
-.navigation a:focus {
+.menu-link a:hover,
+.menu-link a:focus {
   color: var(--accent-col);
 }
 .contacts a {
   color: var(--text-col);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contacts a:hover,
 .contacts a:focus {
@@ -98,10 +94,6 @@ li {
   background: var(--main-button-ac);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-.section-features,
-.section-work {
-  background-color: var(--features-back);
 }
 p {
   color: var(--text-col);
@@ -155,10 +147,6 @@ p {
 }
 .logo-footer {
   color: var(--main-back);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
 }
 .footer-contacts a:hover,
 .footer-contacts a:focus {
